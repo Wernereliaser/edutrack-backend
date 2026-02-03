@@ -34,12 +34,8 @@ public class LearnerMapper {
         dto.setSchoolName(learner.getSchoolName());
         dto.setEnrollmentDate(learner.getEnrollmentDate());
 
-        /* ========= Authorization ========= */
-        dto.setRole(learner.getRole());
-
         /* ========= Status ========= */
         dto.setActive(learner.isActive());
-        dto.setEmailVerified(learner.isEmailVerified());
 
         /* ========= Contact ========= */
         dto.setPhoneNumber(learner.getPhoneNumber());
@@ -78,12 +74,8 @@ public class LearnerMapper {
         learner.setSchoolName(dto.getSchoolName());
         learner.setEnrollmentDate(dto.getEnrollmentDate());
 
-        /* ========= Authorization ========= */
-        learner.setRole(dto.getRole());
-
         /* ========= Status ========= */
         learner.setActive(dto.isActive());
-        learner.setEmailVerified(dto.isEmailVerified());
 
         /* ========= Contact ========= */
         learner.setPhoneNumber(dto.getPhoneNumber());
