@@ -24,7 +24,7 @@ public class UserController {
     }
 
     /**
-     * Explicitly create/update current user (idempotent)
+     * Explicitly create/update current user (independent)
      */
     @PostMapping("/me")
     public User updateCurrentUser(@AuthenticationPrincipal Jwt jwt) {
